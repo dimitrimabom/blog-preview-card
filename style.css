@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: figtreelight;
+  font-family: Figtree;
 }
 
 .attribution {
@@ -36,14 +36,15 @@
 .card {
   max-width: 300px;
   background-color: hsl(0, 0%, 100%);
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 5px 5px 0px hsl(0, 0%, 7%);
   transition: all 0.3s ease;
   cursor: pointer;
+  border: 1px solid hsl(0, 0%, 50%);
 }
 
 .card:hover {
@@ -51,7 +52,7 @@
 }
 
 .card img {
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 .card .img_desc {
@@ -59,6 +60,44 @@
   width: fit-content;
   padding: 5px 10px;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 800;
   border-radius: 3px;
+}
+
+.card .post_desc {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card .card_title {
+  font-size: 16px;
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+
+.card:hover .card_title {
+  color: hsl(47, 83%, 68%);
+}
+
+.card .description {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: .7;
+  line-height: 20px;
+}
+
+.card .profil {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.card .profil img {
+  width: 30px;
+}
+
+.card .profil .profil_name {
+  font-size: 13px;
+  font-weight: 800;
 }
